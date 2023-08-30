@@ -1,5 +1,7 @@
 # Jenkins-Zero-To-Hero
 
+<img width="994" src="https://www.jenkins.io/doc/book/resources/pipeline/realworld-pipeline-flow.png">
+
 Are you looking forward to learn Jenkins right from Zero(installation) to Hero(Build end to end pipelines)? then you are at the right place. 
 
 ## Installation on EC2 Instance
