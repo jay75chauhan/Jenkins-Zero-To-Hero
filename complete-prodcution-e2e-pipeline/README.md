@@ -21,7 +21,20 @@
 ![Screenshot_2023-11-07-18-43-29-87_f9ee0578fe1cc94de7482bd41accb329](https://github.com/jay75chauhan/jay75chauhan/assets/66429052/e3b5edf4-b93a-4405-858f-10572163a991)
 
 # Triger using, build token, and variable
+
+```
+        stage("Trigger CD Pipeline") {
+            steps {
+                script {
+                    sh "curl -v -k --user admin:${JENKINS_API_TOKEN} -X POST -H 'cache-control: no-cache' -H 'content-type: application/x-www-form-urlencoded' --data 'IMAGE_TAG=${IMAGE_TAG}' '[uril of pipline]/buildWithParameters?token=gitops-token'"
+                }
+            }
+
+        }
+```
+
 ![Screenshot_2023-11-07-18-34-33-43_f9ee0578fe1cc94de7482bd41accb329](https://github.com/jay75chauhan/jay75chauhan/assets/66429052/c568ae6a-989a-4014-b35c-5a5c505c2215)
+
 ![Screenshot_2023-11-07-18-34-19-08_f9ee0578fe1cc94de7482bd41accb329](https://github.com/jay75chauhan/jay75chauhan/assets/66429052/437c26be-9eb6-4b66-88d0-a805675adbe7)
 
 
